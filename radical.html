@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+    <link rel="stylesheet" href="https://use.typekit.net/azb3ppl.css">
+    <link rel="stylesheet" href="https://use.typekit.net/azb3ppl.css">
+    <script src = "js/isotope.pkgd.js"></script>
+    <script src = "js/jquery.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  </head>
+  <script type = "text/javascript">
+  function scrollto(div){
+      $('html, body').animate(
+      {
+        scrollTop: $("#"+div).offset().top
+      }, 'slow');
+    }
+  </script>
+  <main>
+    <div id = "landing">
+      <a href = "index.html"><i class="fa fa-times fa-2x" id = "ex"></i></a>
+      <a href = "froggit.html"><i class="fa fa-arrow-right fa-2x" id = "right"></i></a>
+      <a href = "mc.html"><i class="fa fa-arrow-left fa-2x" id = "left"></i></a>
+      <div class='scrolldown'></div>
+      <h1>Radical Project</h1>
+      <h2>2021</h2>
+      <div id = "header">
+        <li onclick="scrollto('overview');">Overview</li>
+      </div>
+    </div>
+    <div id = "overview">
+      <h1>Overview</h1>
+      <p>This is an ongoing project I've been working on this summer with the goal of creating
+        a "dictionary" that documents a Chinese-language learner's progress, and how it connects
+        to the characters and words they have previously learned. This project is being done in a
+        combination of Python apps I built to make datapoint input easier, as well as a three.js-based
+        javascript library that makes the files created by the python apps into networks of Chinese characters.
+    </p>
+      <h2>What I learned: </h2><p> String manipulation in Python, JSON formatting, three.js</p>
+    </div>
+    <p id = "copyright">
+      This website was built with love by Sarah Langleben in 2021 :)
+    </p>
+    <canvas id = "canvas"></canvas>
+  </main>
+  <script src="js/noise.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/bg.js"></script>
+</html>

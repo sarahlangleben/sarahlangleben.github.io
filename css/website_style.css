@@ -1,0 +1,206 @@
+body {
+  background-color: #E0EDF5;
+  color: white;
+  background-image: url(data:image/png;base64,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);
+}
+#sarah {
+  height: 400px;
+  width: 330px;
+  margin-left: 50%;
+}
+#header {
+  text-align: center;
+  word-spacing: 100px;
+  left: 0; bottom: 96%; right: 0;
+  margin:auto;
+  max-width: 600px;
+  position: absolute;
+}
+li:hover {
+  color: #D56062;
+}
+p {
+  font-family: freight-big-pro,serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30;
+  margin: 30px;
+}
+#about p {
+  width: 600px;
+  margin: 0 auto;
+}
+#header li {
+ display: inline-block;
+ cursor:pointer;
+ font-family: freight-big-pro,serif;
+ font-weight: 300;
+ font-size: 20;
+}
+
+#home,#about,#landing, #project {
+  <!-- you can get rid of this later, it's just spacing it out. Keep it until
+  design is more obvious -->
+  margin-top:100px;
+  height:100%;
+}
+
+#landing h1{
+  text-align: center;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 700;
+  left: 0; bottom: 50%; right: 0;
+  margin:auto;
+  max-width: 600px;
+  position: absolute;
+}
+h1 {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 700;
+}
+#project h1, #about h1 {
+  text-decoration: none;
+}
+#landing h2 {
+  font-family: freight-big-pro,serif;
+  font-weight: 400;
+  font-size: 30;
+  text-align: center;
+  left: 0; bottom: 25%; right: 0;
+  margin:auto;
+  max-width: 600px;
+  position: absolute;
+}
+#landing h3 {
+  position: absolute;
+  left: 0; bottom: 10; right: 0;
+  margin:auto;
+  max-width: 600px;
+}
+#landing h3, li {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  word-spacing: 100px;
+}
+#project h3, h2 {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-size: 20;
+}
+#about p {
+  text-align: left;
+  margin-right: 50%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #D56062;
+}
+canvas {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  left: 0px;
+  z-index: -9999;
+  filter: blur(100px);
+  -webkit-filter: blur(200px);
+}
+.button {
+   background-color: Transparent;
+   outline:none;
+   border: none;
+   font-family: freight-big-pro,serif;
+   font-size: 20;
+   font-weight: 500;
+   color: white;
+}
+.button:hover {
+  color: #D56062
+}
+
+#copyright {
+  font-size: 15;
+  margin-top: 5%;
+  float: left;
+  text-decoration: overline;
+}
+/*--grid starts here --*/
+.grid {
+}
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid-sizer {
+  width: 20%;
+
+}
+.grid-item {
+  width: 30%;
+  float: left;
+
+}
+.grid-item img {
+  float: left;
+  width:  2550px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  margin-left: 15%;
+}
+
+/*-- grid stops here --*/
+/*--scrolldown starts here and down ---*/
+.scrolldown {
+  --color: white;
+  --sizeX: 30px;
+  --sizeY: 50px;
+  position: relative;
+  width: var(--sizeX);
+  height: var(--sizeY);
+  margin-left: var(sizeX / 2);
+  border: calc(var(--sizeX) / 10) solid var(--color);
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+.scrolldown::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: var(--color);
+  border-radius: 100%;
+  animation: scrolldown-anim 2s infinite;
+  box-sizing: border-box;
+  box-shadow: 0px -5px 3px 1px #ffffff66;
+}
+@keyframes scrolldown-anim {
+  0% {
+    opacity: 0;
+    height: 6px;
+  }
+  40% {
+    opacity: 1;
+    height: 10px;
+  }
+  80% {
+    transform: translate(0, 20px);
+    height: 10px;
+    opacity: 0;
+  }
+  100% {
+    height: 3px;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+    <link rel="stylesheet" href="https://use.typekit.net/azb3ppl.css">
+    <link rel="stylesheet" href="https://use.typekit.net/azb3ppl.css">
+    <script src = "js/isotope.pkgd.js"></script>
+    <script src = "js/jquery.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  </head>
+  <script type = "text/javascript">
+  function scrollto(div){
+      $('html, body').animate(
+      {
+        scrollTop: $("#"+div).offset().top
+      }, 'slow');
+    }
+  </script>
+  <main>
+    <div id = "landing">
+      <a href = "index.html"><i class="fa fa-times fa-2x" id = "ex"></i></a>
+      <a href = "NWP.html"><i class="fa fa-arrow-right fa-2x" id = "right"></i></a>
+      <a href = "froggit.html"><i class="fa fa-arrow-left fa-2x" id = "left"></i></a>
+      <div class='scrolldown'></div>
+      <h1>Leonard McCombe Archival Work</h1>
+      <h2>2021</h2>
+      <div id = "header">
+        <li onclick="scrollto('overview');">Overview</li>
+      </div>
+    </div>
+    <div id = "overview">
+      <h1>Overview</h1>
+      <p>This is an ongoing project I am doing on behalf of the McCombe Foundation and
+      the German Consulate General of New York City. I am responsible for organizing, documenting, and archiving photographs taken
+      by the photographer Leonard McCombe during and after World War II. I am also helping to plan and organize an exhibition
+      in collaboration with the German Consulate General of New York City to showcase the photographs.
+     </p>
+      <h2>What I learned: </h2>
+      <p>Adobe Lightroom, how to work with film photography, exhibition/event planning,
+        document preservation and storage, audio transcription.
+      </p>
+    </div>
+    <p id = "copyright">
+      This website was built with love by Sarah Langleben in 2021 :)
+    </p>
+    <canvas id = "canvas"></canvas>
+  </main>
+  <script src="js/noise.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/bg.js"></script>
+</html>
