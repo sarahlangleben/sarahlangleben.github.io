@@ -1,7 +1,7 @@
-var canvas=document.getElementById("canvas");
+var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
-var x = canvas.width/2;
-var y = canvas.height-40;
+var x = canvas.width / 2;
+var y = canvas.height - 40;
 var dx = 1;
 var dy = 1;
 var radius = 1;
@@ -9,19 +9,20 @@ var radius = 1;
 
 function midCircle() {
   ctx.beginPath();
-  ctx.fillStyle = "#F37748"
+  // DEFINE THESE COLORS LATER
+  ctx.fillStyle = "#FFFFFF"
   ctx.arc(x, y, 100, 0, 2 * Math.PI);
   ctx.fill();
 }
 function scndCircle() {
   ctx.beginPath();
-  ctx.fillStyle = "#D56062"
+  ctx.fillStyle = "#FFFFFF"
   ctx.arc(x, y, 200, 0, 2 * Math.PI);
   ctx.fill();
 }
 function thrdCircle() {
   ctx.beginPath();
-  ctx.fillStyle = "#ECC30B"
+  ctx.fillStyle = "#FFFFFF"
   ctx.arc(x, y, 300, 0, 2 * Math.PI);
   ctx.fill();
 }
@@ -32,10 +33,10 @@ function draw() {
   scndCircle();
   midCircle();
 
-  if(x + dx > canvas.width-radius || x + dx < radius) {
+  if (x + dx > canvas.width - radius || x + dx < radius) {
     dx = -dx;
   }
-  if(x + dy > canvas.height- radius || y + dy < radius){
+  if (x + dy > canvas.height - radius || y + dy < radius) {
     dy = -dy;
   }
   x += dx;

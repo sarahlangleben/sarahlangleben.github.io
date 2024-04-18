@@ -1,160 +1,88 @@
-<html>
-  <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/website_style.css">
-  <link rel="stylesheet" href="https://use.typekit.net/azb3ppl.css">
-  <link rel="stylesheet" href="https://use.typekit.net/azb3ppl.css">
-  <link rel="stylesheet" href="https://use.typekit.net/azb3ppl.css">
-  <script src = "js/isotope.pkgd.js"></script>
-  <script src = "js/jquery.min.js"></script>
-  <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-  <script type = "text/javascript">
-  function scrollto(div){
-      $('html, body').animate(
-      {
-        scrollTop: $("#"+div).offset().top
-      }, 'slow');
-    }
-  </script>
-  </head>
-  <body>
-    <div>
-    <div id = "landing">
-      <div id = "header">
-        <li onclick="scrollto('about');">About</li>
-        <li onclick="scrollto('project');">Projects</li>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <link rel="stylesheet" type="text/css" href="css/website_style.css"> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  .custom-ul {
+    text-align: right;
+  }
+</style>
+
+<body>
+  <!-- <canvas id="canvas"></canvas> -->
+  <!-- navbar -->
+  <div class="container">
+    <ul class="nav nav-underline justify-content-start flex-nowrap">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="resume.html">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Completed Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="updates.html">Updates</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SARAH LANGLEBEN -->
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-auto">
+        <h1 class="display-2">Sarah Langleben</h1>
       </div>
-      <h1> Hi, I'm Sarah.</h1>
-      <h2> This is my portfolio website! Click the links above and below to learn more.</h2>
-      <!--<div class='scrolldown'></div>-->
-      <h3>
-        <a href = "https://github.com/sarahlangleben"><i class="fa fa-github fa-2x"></i></a>
-        <a href = "https://www.linkedin.com/in/sarah-langleben-22b3821aa/"><i class="fa fa-linkedin fa-2x"></i></a>
-        <a href = "https://www.instagram.com/sa.lang/"><i class="fa fa-instagram fa-2x"></i></a>
-        <a href = "https://www.behance.net/slangleben"><i class="fa fa-behance fa-2x"></i></a>
-      </h3>
-    </div>
-    <div id ="about">
-      <h1> About </h1>
-      <p>Hello, my name is Sarah! I'm a sophomore at Cornell University's College of Agriculture and
-      Life Sciences, pursuing a double major in Information Science and International Agriculture
-      and Rural Development. I hope you enjoy exploring my corner of the internet!</p>
-        <p>Languages: English (fluent), Mandarin Chinese (intermediate)
-        <br>
-        <br>Programming: Python, Java, JavaScript, HTML/CSS, R
-        <br>
-        <br>Software: Adobe Suite, Microsoft Suite, WordPress, Unity, CAD
-        <br>
-        <br><a href =mailto:&#115;&#109;&#108;&#051;&#052;&#051;&#064;&#099;&#111;&#114;&#110;&#101;&#108;&#108;&#046;&#101;&#100;&#117> Email me</a> | <a href = "2022 resume.pdf">Download my resume</a>
-      </p>
-    </div>
-    <canvas id = "canvas"></canvas>
-    <div id = "project">
-      <h1>Projects</h1>
-      <div class="button-group filters-button-group">
-        <h3> Filter by:
-          <button class="button is-checked" data-filter="*">show all</button>
-          <button class="button" data-filter=".WIP">work in progress</button>
-          <button class = "button" data-filter = ".code">programming</button>
-          <button class = "button" data-filter = ".graphic">graphic design</button>
-        </h3>
-      </div>
-  <div class="grid">
-    <div class = "grid-item code">
-      <a href = "seniorproject.html"><img src="img/chhaupadi.gif" id = "chhaupadi"/></a>
-    </div>
-    <div class = "grid-item graphic">
-      <a href = "emoticon.html"><img src="img/Emoti-Con_18_Face_Poster_V2.jpg"/></a>
-    </div>
-    <div class = "grid-item code WIP">
-      <a href = "radical.html"><img src = "img/radical.gif"/></a>
-    </div>
-    <div class = "grid-item graphic">
-      <a href = "emoticon.html"><img src = "img/Emoti-Con_18_Light-Bulb_Poster_V2 copy.jpg"></a>
-    </div>
-    <div class = "grid-item code">
-      <a href = "seniorproject.html"><img src = "img/female-literacy-rates.gif" id = "fem"/></a>
-    </div>
-    <div class = "grid-item graphic">
-      <a href = "NWP.html"><img src = "img/NWP logo.jpg"/></a>
-    </div>
-    <div class = "grid-item WIP">
-      <a href = "mc.html"><img src = "img/mc.jpg"/></a>
-    </div>
-    <div class = "grid-item code">
-      <a href = "seniorproject.html"><img src = "img/perlin.gif"/></a>
-    </div>
-    <div class = "grid-item code">
-      <a href = "froggit.html"><img src="img/froggit.gif" id = "frog"/></a>
+
     </div>
   </div>
-  <p id = "copyright">
-    This website was built with love by Sarah Langleben in 2021 :)
-  </p>
-  <script>
-    var iso = new Isotope( '.grid', {
-      itemSelector: '.grid-item',
-      layoutMode: 'masonry'
-    });
+  <!-- Github,email,linkedin -->
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-auto">
+        <ul class="list-unstyled custom-ul">
+          <li><a href="https://github.com/sarahlangleben">Github 💾</li></a>
+          <li><a href="mailto:sml343@cornell.edu" data-toggle="tooltip" title="sml343@cornell.edu">Email ✉️</a></li>
+          <li><a href="https://www.linkedin.com/in/sarah-langleben-22b3821aa/">LinkedIn 💼</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-    var filtersElem = document.querySelector('.filters-button-group');
-    filtersElem.addEventListener( 'click', function( event ) {
-      // only work with buttons
-      if ( !matchesSelector( event.target, 'button' ) ) {
-        return;
-      }
-      var filterValue = event.target.getAttribute('data-filter');
-      // use matching filter function
-      filterValue = filterValue;
-      iso.arrange({ filter: filterValue });
-    });
+  <!-- </script> -->
+  <!-- <script src="js/bg.js"></script> -->
 
-    // change is-checked class on buttons
-    var buttonGroups = document.querySelectorAll('.button-group');
-    for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
-      var buttonGroup = buttonGroups[i];
-      radioButtonGroup( buttonGroup );
-    }
+</body>
 
-    function radioButtonGroup( buttonGroup ) {
-      buttonGroup.addEventListener( 'click', function( event ) {
-        // only work with buttons
-        if ( !matchesSelector( event.target, 'button' ) ) {
-          return;
-        }
-        buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
-        event.target.classList.add('is-checked');
-      });
-    }
-    </script>
-  <script>
-          $('document').ready(function(){
-            var transEffect = Barba.BaseTransition.extend({
-                start: function(){
-                  this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
-                },
-                fadeInNewcontent: function(nc) {
-                  nc.hide();
-                  var _this = this;
-                  $(this.oldContainer).fadeOut(1000).promise().done(() => {
-                    nc.css('visibility','visible');
-                    nc.fadeIn(1000, function(){
-                      _this.done();
-                    })
-                  });
-                }
-            });
-            Barba.Pjax.getTransition = function() {
-              return transEffect;
-            }
-            Barba.Pjax.start();
-          });
-  </script>
-  </main>
-    <script src="js/noise.min.js"></script>
-		<script src="js/util.js"></script>
-		<script src="js/bg.js"></script>
-    <script src = "js/transition.js"></script>
-  </body>
 </html>
