@@ -1,2 +1,2 @@
 # sarahlangleben.github.io
-portfolio website, last updated in 2024 (and still WIP)
+portfolio website, last updated in March 2025 (and still WIP)
